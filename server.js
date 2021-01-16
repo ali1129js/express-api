@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.port || 5000;
 
 //Middlewares
+app.use(cors());
 // without bodyparser the req.body will return undefined
 app.use(bodyParser.json());
 // use the router for the path /applicants
